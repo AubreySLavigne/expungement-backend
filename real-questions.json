@@ -1,0 +1,168 @@
+[
+  {
+    "id": "previouslyExpunged",
+    "question": "Have you ever had a juvenille or adult criminal record expunged in Florida?",
+    "choices": [
+      "Yes",
+      "No",
+      "Not Sure"
+    ]
+  },
+  {
+    "id": "previouslyExpungedMessage",
+    "question": "Florida Law prevents individuals from having a criminal record expunged more than once",
+    "branching": [
+      {
+        "question": "previouslyExpunged",
+        "any_of": [
+          "Yes", "No"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "county",
+    "question": "County in Florida",
+    "choices": [
+      "Alachua County",
+      "Baker County",
+      "Bay County",
+      "Bradford County",
+      "Brevard County",
+      "Broward County",
+      "Calhoun County",
+      "Charlotte County",
+      "Citrus County",
+      "Clay County",
+      "Collier County",
+      "Columbia County",
+      "DeSoto County",
+      "Dixie County",
+      "Duval County",
+      "Escambia County",
+      "Flagler County",
+      "Franklin County",
+      "Gadsden County",
+      "Gilchrist County",
+      "Glades County",
+      "Gulf County",
+      "Hamilton County",
+      "Hardee County",
+      "Hendry County",
+      "Hernando County",
+      "Highlands County",
+      "Hillsborough County",
+      "Holmes County",
+      "Indian River County",
+      "Jackson County",
+      "Jefferson County",
+      "Lafayette County",
+      "Lake County",
+      "Lee County",
+      "Leon County",
+      "Levy County",
+      "Liberty County",
+      "Madison County",
+      "Manatee County",
+      "Marion County",
+      "Martin County",
+      "Miami-Dade County",
+      "Monroe County",
+      "Nassau County",
+      "Okaloosa County",
+      "Okeechobee County",
+      "Orange County",
+      "Osceola County",
+      "Palm Beach County",
+      "Pasco County",
+      "Pinellas County",
+      "Polk County",
+      "Putnam County",
+      "Santa Rosa County",
+      "Sarasota County",
+      "Seminole County",
+      "St. Johns County",
+      "St. Lucie County",
+      "Sumter County",
+      "Suwannee County",
+      "Taylor County",
+      "Union County",
+      "Volusia County",
+      "Wakulla County",
+      "Walton County",
+      "Washington County"
+    ]
+  },
+  {
+    "id": "currentCharge",
+    "question": "Currently charged on a crime",
+    "choices": [
+      "Yes",
+      "No"
+    ]
+  },
+  {
+    "id": "probationOrParole",
+    "question": "Are you on probation or parole",
+    "choices": [
+      "Yes",
+      "No"
+    ]
+  },
+  {
+    "id": "recentFinalJudgement",
+    "question": "Was your Final Judgement closed within the last 10 years",
+    "choices": [
+      "Yes",
+      "No"
+    ],
+    "branching": [
+      {
+        "question": "questionID",
+        "any_of": [
+          "Yes"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "typesOfCharges",
+    "question": "Types of Charges in Florida",
+    "choices": [
+      "Yes",
+      "No"
+    ],
+    "settings": {
+      "multiselect": false,
+      "grid": {
+        "enabled": "true",
+        "options": [
+          {
+            "id": "violentHeader",
+            "question": "Violent Crimes"
+          },
+          {
+            "id": "sexualHeader",
+            "question": "Sexual Crimes"
+          },
+          {
+            "id": "destructionHeader",
+            "question": "Destructive Crimes"
+          },
+          {
+            "id": "nonViolentSexualHeader",
+            "question": "Non-Violent/Non-Sexual Crimes"
+          }
+        ]
+      }
+    },
+    "branching": [
+      {
+        "question": "questionID",
+        "any_of": [
+          "Yes"
+        ]
+      }
+    ]
+  }
+]
