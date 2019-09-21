@@ -1,0 +1,35 @@
+[
+  {
+    "id": "questionID",
+    "question": "What is the question?",
+    "choices": [
+      "Yes",
+      "No",
+      "Maybe"
+    ],
+    "settings": {
+      "multiselect": false,
+      "grid": {
+        "enabled": "true",
+        "options": [
+          {
+            "id": "questionGrid1",
+            "question": "grid1"
+          },
+          {
+            "id": "questionGrid2",
+            "question": "grid2"
+          }
+        ]
+      }
+    },
+    "branching": [
+      {
+        "question": "questionID",
+        "any_of": [
+          "Yes"
+        ]
+      }
+    ]
+  }
+]
