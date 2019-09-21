@@ -15,7 +15,8 @@
       {
         "question": "previouslyExpunged",
         "any_of": [
-          "Yes", "No"
+          "Yes",
+          "Not Sure"
         ]
       }
     ]
@@ -155,14 +156,6 @@
           }
         ]
       }
-    },
-    "branching": [
-      {
-        "question": "questionID",
-        "any_of": [
-          "Yes"
-        ]
-      }
-    ]
+    }
   }
 ]
